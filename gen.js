@@ -26,7 +26,7 @@ function generate(data) {
     fs.copySync(template, product);
     fs.copySync("bower_components", product + "bower_components");
     if (fs.existsSync(resources)) {
-	    fs.copySync(resources, product + "resources");
+        fs.copySync(resources, product + "resources");
     }
 
     /* Transform HTML */
@@ -80,7 +80,9 @@ if (!fs.existsSync("backups/")) {
 }
 
 for (var i = products.length - 1; i >= 0; i--) {
-    data = fs.readJSONSync("data/" + products[i]);
-    special = genSpecial(data);
-    generate(data);
+    if (!fs.statsSync("data/" + products[i]).isDirectory()) {
+        data = fs.readJSONSync("data/" + products[i]);
+        special = genSpecial(data);
+        generate(data);
+    }
 }
