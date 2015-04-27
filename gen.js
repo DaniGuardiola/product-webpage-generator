@@ -12,6 +12,7 @@ function generate(data) {
     var product = "products/" + name + "/";
     var template = "product-template/";
     var backup = "backups/" + name + "/";
+    var resources = "data/" + name + "/";
 
     /* Backup */
     if (fs.existsSync(product)) {
@@ -24,6 +25,9 @@ function generate(data) {
     /* Copying */
     fs.copySync(template, product);
     fs.copySync("bower_components", product + "bower_components");
+    if (fs.existsSync(resources)) {
+	    fs.copySync(resources, product + "resources");
+    }
 
     /* Transform HTML */
     var html = fs.readFileSync(product + "index.html");
