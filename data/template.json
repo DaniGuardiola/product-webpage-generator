@@ -1,6 +1,8 @@
 {
     "dirName": "example",
     "productName": "Example",
+    "authorUrl": "someguy.com",
+    "authorName": "Some Guy",
     "mainColor": "blue",
     "changelog": [{
         "number": "1.0.0",
@@ -8,6 +10,11 @@
             "Added something",
             "And another thing",
             "Yet more things"
+        ]
+    },{
+        "number": "1.0.2",
+        "changes": [
+            "Fixed bugs here and there"
         ]
     }]
 }

@@ -23,6 +23,7 @@ function generate(data) {
 
     /* Copying */
     fs.copySync(template, product);
+    fs.copySync("bower_components", product + "bower_components");
 
     /* Transform HTML */
     var html = fs.readFileSync(product + "index.html");
