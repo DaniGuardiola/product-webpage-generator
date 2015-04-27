@@ -1,6 +1,14 @@
 #main-paper {
-    width: 100%;
     min-height: 256px;
+}
+
+@media all and (max-width: 768px) {
+    #main-paper {
+        width: 100%;
+    }
+    #author {
+        display: none;
+    }
 }
 
 @media all and (min-width: 768px) {
