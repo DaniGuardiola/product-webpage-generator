@@ -1,0 +1,13 @@
+{
+    "dirName": "example",
+    "productName": "Example",
+    "mainColor": "blue",
+    "changelog": [{
+        "number": "1.0.0",
+        "changes": [
+            "Added something",
+            "And another thing",
+            "Yet more things"
+        ]
+    }]
+}

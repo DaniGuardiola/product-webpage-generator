@@ -1,0 +1,21 @@
+{
+  "name": "projects-webpage-gen",
+  "version": "0.0.0",
+  "authors": [
+    "DaniGuardiola <contacto@daniguardiola.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paperkit-min": "~0.1.0"
+  },
+  "devDependencies": {
+    "paperkit-min": "~0.1.0"
+  }
+}

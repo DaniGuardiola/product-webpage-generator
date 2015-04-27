@@ -1,0 +1,11 @@
+# Resources (run "npm install" and "bower install")
+bower_components/
+node_modules/
+
+# Generated (run "node gen.js")
+backups/
+products/
+
+# Data
+data/*
+!data/template.json
