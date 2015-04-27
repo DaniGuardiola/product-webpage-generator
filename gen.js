@@ -80,7 +80,7 @@ if (!fs.existsSync("backups/")) {
 }
 
 for (var i = products.length - 1; i >= 0; i--) {
-    if (!fs.statsSync("data/" + products[i]).isDirectory()) {
+    if (!fs.statSync("data/" + products[i]).isDirectory()) {
         data = fs.readJSONSync("data/" + products[i]);
         special = genSpecial(data);
         generate(data);
