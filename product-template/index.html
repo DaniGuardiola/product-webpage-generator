@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <title>%productName%</title>
     <link rel="stylesheet" href="bower_components/paperkit-min/paperkit.css">
-    <script src="bower_components/paperkit-min/paperkit.js"></script>
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <md-toolbar md-color="%mainColor%" md-shadow="shadow-1">
+<body md-layout>
+    <md-toolbar md-color="%mainColor%" md-shadow="shadow-1" md-heigth="x3">
         <md-row md-type="standard">
             <md-icon-button md-image="icon: menu" md-action="custom: paperkit.sidemenu.open"></md-icon-button>
-            <md-text>%productName% <span id="version">%currentVersion%</span></md-text>
+            <md-text>%productName% <span md-font-color="%mainColor%-900" id="version">%currentVersion%</span></md-text>
             <md-space></md-space>
-            <md-text md-font-color="%mainColor%-200">by <a style="text-decoration: none; color: inherit;" href="http://%authorUrl%/">%authorName%</a></md-text>
+            <md-text md-font-color="%mainColor%-100">by <a style="text-decoration: none; color: inherit;" href="http://%authorUrl%/">%authorName%</a></md-text>
             <md-icon-button md-image="icon: favorite"></md-icon-button>
         </md-row>
+        <md-row md-type="standard"></md-row>        
+        <md-row md-type="standard"></md-row>        
     </md-toolbar>
     <md-sidemenu>
     </md-sidemenu>
+    <md-content md-color="grey-200">
+    	<md-paper id="main-paper" md-shadow="shadow-1"></md-paper>
+    </md-content>
+    <script src="bower_components/paperkit-min/paperkit.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+#main-paper {
+    width: 100%;
+    min-height: 256px;
+}
+
+@media all and (min-width: 768px) {
+    body>md-toolbar {
+        z-index: initial !important;
+    }
+    #main-paper {
+        position: fixed;
+        top: 64px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 700px;
+    }
+}
+
+@media all and (min-width: 1120px) {
+    #main-paper {
+        width: 900px;
+    }
+}
