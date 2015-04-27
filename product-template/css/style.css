@@ -3,15 +3,18 @@
 }
 
 @media all and (max-width: 768px) {
-    #main-paper {
-        width: 100%;
-    }
     #author {
         display: none;
     }
+    #main-paper {
+        width: 100%;
+    }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) {	
+    #author-mobile {
+        display: none;
+    }
     body>md-toolbar {
         z-index: initial !important;
     }

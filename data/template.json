@@ -3,7 +3,7 @@
     "productName": "Example",
     "authorUrl": "someguy.com",
     "authorName": "Some Guy",
-    "mainColor": "blue",
+    "mainColor": "cyan",
     "changelog": [{
         "number": "1.0.0",
         "changes": [
@@ -16,5 +16,7 @@
         "changes": [
             "Fixed bugs here and there"
         ]
-    }]
+    }],
+    "landingTitle": "Thanks for installing this product!",
+    "landingText": "Click the button to start. You can use this feature and that one. If you enjoy it, please consider donating, also send me any bugs, ideas or any kind of feedback!"
 }

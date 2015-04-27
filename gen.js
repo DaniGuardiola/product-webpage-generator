@@ -54,7 +54,7 @@ function genSpecial(data) {
 }
 
 function replacer(a, b, name) {
-    var output = special[name] || data[name] || "Check JSON! Var " + name + " does not exists!";
+    var output = special[name] || data[name] || "ERROR: [" + name + "] does not exists!";
     if (typeof output === "object") {
         output = JSON.stringify(output);
     }
