@@ -18,13 +18,15 @@
 }
 
 .faq md-icon svg {
-  top: 4px;
-  left: 2px;
+    top: 0;
+    left: 0;
 }
+
 .faq md-icon {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
+    display: inline-block;
+    padding: 0;
+    height: 16px;
+    width: 24px;
 }
 
 #main-paper md-tabbar #selector {
