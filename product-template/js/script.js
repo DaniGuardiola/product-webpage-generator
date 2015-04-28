@@ -35,7 +35,7 @@ function init() {
         }
         if (p) {
             version.textContent = p.getAttribute("data-version");
-            p.setAttribute("md-color", data.theme.color + "-700");
+            p.setAttribute("md-color", data.theme.color + "-100");
         }
     }
 
