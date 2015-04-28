@@ -13,6 +13,7 @@
     "changelog": {
         "tab": "Changes",
         "landing": "I've got an update for you! Check this out",
+        "landingTab": "Hi there!",
         "versions": [{
             "number": "1.0.0",
             "changes": [
@@ -31,7 +32,7 @@
         }]
     },
     "landing": {
-        "tab": "Hi there!",
+        "tab": "Welcome!",
         "title": "Thanks for installing this product!",
         "text": "Here are a few must-know things about Template! If you enjoy this app please consider donating, you can fork the project at <a href=\"github.com\">github.com/SomeGuy/Template.</a>",
         "sections": [{

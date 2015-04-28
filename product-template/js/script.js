@@ -7,7 +7,6 @@ window.addEventListener("load", function() {
 var data = "!%javascript%!";
 
 function init() {
-    paperkit.init();
 
     var hash = window.location.hash.split("?")[0];
     var tabs = document.querySelector("#main-paper md-tabbar");
@@ -35,10 +34,14 @@ function init() {
         }
     }
 
+    if (param("update") === "true") {
+        landingTitle.textContent = "!%changelog.landing%!";
+        tabs[0].textContent = "!%changelog.landingTab%!";
+    }
+
+    paperkit.init();
+
     if (hash === "#changelog") {
-        if (param("update") === "true") {
-            landingTitle.textContent = "!%changelog.landing%!";
-        }
         setTimeout(function() {
             tabs.children[1].click();
         }, 3000);
@@ -47,6 +50,6 @@ function init() {
 }
 
 
-function donate(){
-	window.open("!%meta.donate%!");
+function donate() {
+    window.open("!%meta.donate%!");
 }
