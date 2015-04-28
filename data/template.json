@@ -3,6 +3,7 @@
         "name": "Template",
         "title": "%meta.name% - The #1 app for doing stuff",
         "description": "With %meta.name% you can do awesome stuff, like this thing or that other thing!",
+        "email": "feedback@daniguardiola.me",
         "dir": "template",
         "author": "Some Guy",
         "url": "someguy.com",
@@ -45,7 +46,17 @@
         }]
     },
     "social": {
-    	"twitterMsg": "This is a template tweet! #Wohoo",
-    	"url": "some.website.com"
+        "twitterMsg": "This is a template tweet! #Wohoo",
+        "url": "some.website.com"
+    },
+    "faq": {
+        "tab": "Help",
+        "questions": [{
+            "question": "How do I do this?",
+            "answer": "You have to do that and then you'll be able to do this"
+        }, {
+            "question": "What is the answer to life, the universe and everything?",
+            "answer": "42. Everybody knows that."
+        }]
     }
 }

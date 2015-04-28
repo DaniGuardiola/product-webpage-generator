@@ -74,6 +74,12 @@ function genLandingSections() {
         var title;
         var change;
 
+        // FAQ vars
+        var faq;
+        var qanda;
+        var question;
+        var answer;
+
         // Landing generator (incomplete)
         landing = document.createElement("div");
         landing.className = "landing";
@@ -115,6 +121,30 @@ function genLandingSections() {
             changelog.appendChild(p);
         }
 
+        // FAQ generator
+        faq = document.createElement("div");
+        faq.className = "faq";
+
+        for (i = data.faq.questions.length - 1; i >= 0; i--) {
+            qanda = data.faq.questions[i];
+
+            p = document.createElement("p");
+            p.setAttribute("md-padding", "");
+
+
+            question = document.createElement("span");
+            question.setAttribute("md-typo", "title");
+            question.innerHTML = qanda.question + "<br>";
+
+            answer = document.createElement("span");
+            answer.innerHTML = qanda.answer;
+
+            p.appendChild(question);
+            p.appendChild(answer);
+
+            faq.appendChild(p);
+        }
+
         // Landing HTML extraction
         wrap = document.createElement("div");
         wrap.appendChild(landing);
@@ -128,6 +158,13 @@ function genLandingSections() {
 
         // Changelog export 
         special.changelog.html = wrap.innerHTML;
+
+        // FAQ HTML extraction
+        wrap.innerHTML = "";
+        wrap.appendChild(faq);
+
+        // FAQ export 
+        special.faq.html = wrap.innerHTML;
 
         generate(data);
     });
@@ -148,6 +185,9 @@ function genSpecial() {
             "html": ""
         },
         "changelog": {
+            "html": ""
+        },
+        "faq": {
             "html": ""
         }
     };

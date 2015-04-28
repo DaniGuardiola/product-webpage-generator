@@ -18,7 +18,7 @@
             <md-text>%meta.name% <span md-font-color="%theme.color%-900" id="version">%version%</span></md-text>
             <md-space></md-space>
             <md-text id="author" md-font-color="%theme.color%-100">by <a style="text-decoration: none; color: inherit;" href="http://%meta.url%/">%meta.author%</a></md-text>
-            <md-icon-button md-image="icon: help"></md-icon-button>
+            <md-icon-button md-image="icon: mail" md-action="link-out: mailto:%meta.email%"></md-icon-button>
         </md-row>
         <md-row md-type="standard">
             <md-icon></md-icon>
@@ -36,6 +36,7 @@
                     <md-tabbar md-pager="main-pager">
                         <md-tab>%landing.tab%</md-tab>
                         <md-tab>%changelog.tab%</md-tab>
+                        <md-tab>%faq.tab%</md-tab>
                     </md-tabbar>
                     <md-space></md-space>
                     <md-icon-button md-image="icon: twitter" md-action="link-out: https://twitter.com/home?status=%social.twitterMsg%"></md-icon-button>
@@ -52,6 +53,7 @@
                     <span md-typo="subhead">%landing.text%</span> %landing.html%
                 </md-page>
                 <md-page>%changelog.html%</md-page>
+                <md-page>%faq.html%</md-page>
             </md-pager>
         </md-paper>
     </md-content>

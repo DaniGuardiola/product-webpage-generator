@@ -12,7 +12,8 @@
     background-color: red;
 }
 
-.changelog p {
+.changelog p,
+.faq p {
     margin: 0;
 }
 
