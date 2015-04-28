@@ -151,12 +151,12 @@ function genSpecial() {
         },
         "changelog": {
             "html": ""
-        },
-        "theme": data.theme
+        }
     };
     special.javascript = {
         "changelog": data.changelog,
-        "version": special.version
+        "version": special.version,
+        "theme": data.theme
     };
     genLandingSections();
 }
