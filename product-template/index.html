@@ -16,7 +16,7 @@
             <md-text>%meta.name% <span md-font-color="%theme.color%-900" id="version">%version%</span></md-text>
             <md-space></md-space>
             <md-text id="author" md-font-color="%theme.color%-100">by <a style="text-decoration: none; color: inherit;" href="http://%meta.url%/">%meta.author%</a></md-text>
-            <md-icon-button md-image="icon: favorite"></md-icon-button>
+            <md-icon-button md-image="icon: help"></md-icon-button>
         </md-row>
         <md-row md-type="standard">
             <md-icon></md-icon>
@@ -26,6 +26,7 @@
     </md-toolbar>
     <md-sidemenu>
     </md-sidemenu>
+    <md-fab md-fill="white" md-color="red" md-image="icon: favorite"></md-fab>
     <md-content md-color="grey-200">
         <md-paper id="main-paper" md-shadow="shadow-1">
             <md-toolbar md-color="%theme.color%-700">
@@ -35,10 +36,10 @@
                         <md-tab>%changelog.tab%</md-tab>
                     </md-tabbar>
                     <md-space></md-space>
-                    <md-icon-button md-image="icon: twitter"></md-icon-button>
-                    <md-icon-button md-image="icon: facebook"></md-icon-button>
-                    <md-icon-button md-image="icon: google-plus"></md-icon-button>
-                    <md-icon-button md-image="icon: github"></md-icon-button>
+                    <md-icon-button md-image="icon: twitter" md-action="link-out: https://twitter.com/home?status=%social.twitterMsg%"></md-icon-button>
+                    <md-icon-button md-image="icon: facebook" md-action="link-out: https://www.facebook.com/sharer/sharer.php?u=http://%social.url%/"></md-icon-button>
+                    <md-icon-button md-image="icon: google-plus" md-action="link-out: https://plus.google.com/share?url=http://%social.url%/"></md-icon-button>
+                    <md-icon-button md-image="icon: github" md-action="link-out: http://%meta.repo%/"></md-icon-button>
                 </md-row>
             </md-toolbar>
             <md-pager id="main-pager">

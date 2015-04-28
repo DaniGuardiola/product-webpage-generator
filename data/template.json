@@ -3,7 +3,8 @@
         "name": "Template",
         "dir": "template",
         "author": "Some Guy",
-        "url": "someguy.com"
+        "url": "someguy.com",
+        "repo": "github.com/SomeGuy/Template"
     },
     "theme": {
         "color": "green"
@@ -12,19 +13,9 @@
         "tab": "Changes",
         "landing": "I've got an update for you! Check this out",
         "versions": [{
-            "number": "1.0.0",
+            "number": "1.1",
             "changes": [
-                "Added something",
-                "And another thing",
-                "Yet more stuff"
-            ]
-        }, {
-            "beta": true,
-            "number": "1.0.2",
-            "changes": [
-                "Fixed bugs here and there",
-                "Added bugs there and here",
-                "New super cool broken thing"
+                "First release!"
             ]
         }]
     },
@@ -38,5 +29,9 @@
         }, {
             "text": "This one is niiiiice, look at dat"
         }]
+    },
+    "social": {
+    	"twitterMsg": "This is a template tweet! #Wohoo",
+    	"url": "wikilist.daniguardiola.me"
     }
 }
