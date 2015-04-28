@@ -102,9 +102,15 @@
     }
 }
 
-@media all and (min-width: 1080px) {
+@media all and (min-width: 900px) {
     md-fab {
         top: 164px;
+        right: 3%;
+    }
+}
+
+@media all and (min-width: 1080px) {
+    md-fab {
         right: 7%;
     }
 }
