@@ -2,6 +2,24 @@
     min-height: 256px;
 }
 
+#main-pager {
+    width: 100%;
+}
+
+.landing {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.changelog p {
+	margin: 0;
+}
+
+#main-paper md-tabbar #selector {
+    background-color: white;
+}
+
 @media all and (max-width: 768px) {
     #author {
         display: none;
@@ -27,11 +45,5 @@
         max-height: 86%;
         overflow: auto;
         border-radius: 2px;
-    }
-}
-
-@media all and (min-width: 1120px) {
-    #main-paper {
-        width: 900px;
     }
 }

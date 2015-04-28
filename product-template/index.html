@@ -3,34 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>%productName%</title>
+    <title>%meta.name%</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="bower_components/paperkit-min/paperkit.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body md-layout>
-    <md-toolbar md-color="%mainColor%" md-shadow="shadow-1" md-heigth="x3">
+    <md-toolbar md-color="%theme.color%" md-shadow="shadow-1" md-heigth="x3">
         <md-row md-type="standard">
             <md-icon-button md-image="icon: menu" md-action="custom: paperkit.sidemenu.open"></md-icon-button>
-            <md-text>%productName% <span md-font-color="%mainColor%-900" id="version">%currentVersion%</span></md-text>
+            <md-text>%meta.name% <span md-font-color="%theme.color%-900" id="version">%version%</span></md-text>
             <md-space></md-space>
-            <md-text id="author" md-font-color="%mainColor%-100">by <a style="text-decoration: none; color: inherit;" href="http://%authorUrl%/">%authorName%</a></md-text>
+            <md-text id="author" md-font-color="%theme.color%-100">by <a style="text-decoration: none; color: inherit;" href="http://%meta.url%/">%meta.author%</a></md-text>
             <md-icon-button md-image="icon: favorite"></md-icon-button>
         </md-row>
-        <md-row md-type="standard">			
+        <md-row md-type="standard">
             <md-icon></md-icon>
-            <md-text id="author-mobile" md-font-color="%mainColor%-100">by <a style="text-decoration: none; color: inherit;" href="http://%authorUrl%/">%authorName%</a></md-text>
-        </md-row>        
-        <md-row md-type="standard"></md-row>        
+            <md-text id="author-mobile" md-font-color="%theme.color%-100">by <a style="text-decoration: none; color: inherit;" href="http://%meta.url%/">%meta.author%</a></md-text>
+        </md-row>
+        <md-row md-type="standard"></md-row>
     </md-toolbar>
     <md-sidemenu>
     </md-sidemenu>
     <md-content md-color="grey-200">
-    	<md-paper md-padding id="main-paper" md-shadow="shadow-1">
-			<span md-typo="display-1">%landingTitle%</span><br><br>
-			<span md-typo="subhead">%landingText%</span>
-    	</md-paper>
+        <md-paper id="main-paper" md-shadow="shadow-1">
+            <md-toolbar md-color="%theme.color%-700">
+                <md-row md-type="mini">
+                    <md-tabbar md-pager="main-pager">
+                        <md-tab>%landing.tab%</md-tab>
+                        <md-tab>%changelog.tab%</md-tab>
+                    </md-tabbar>
+                    <md-space></md-space>
+                    <md-icon-button md-image="icon: twitter"></md-icon-button>
+                    <md-icon-button md-image="icon: facebook"></md-icon-button>
+                    <md-icon-button md-image="icon: google-plus"></md-icon-button>
+                    <md-icon-button md-image="icon: github"></md-icon-button>
+                </md-row>
+            </md-toolbar>
+            <md-pager id="main-pager">
+                <md-page md-padding>
+                    <span id="landing-title" md-typo="display-1">%landing.title%</span>
+                    <br>
+                    <br>
+                    <span md-typo="subhead">%landing.text%</span> %landing.html%
+                </md-page>
+                <md-page>%changelog.html%</md-page>
+            </md-pager>
+        </md-paper>
     </md-content>
     <script src="bower_components/paperkit-min/paperkit.js"></script>
     <script src="js/script.js"></script>

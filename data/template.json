@@ -1,22 +1,42 @@
 {
-    "dirName": "example",
-    "productName": "Example",
-    "authorUrl": "someguy.com",
-    "authorName": "Some Guy",
-    "mainColor": "cyan",
-    "changelog": [{
-        "number": "1.0.0",
-        "changes": [
-            "Added something",
-            "And another thing",
-            "Yet more things"
-        ]
-    },{
-        "number": "1.0.2",
-        "changes": [
-            "Fixed bugs here and there"
-        ]
-    }],
-    "landingTitle": "Thanks for installing this product!",
-    "landingText": "Click the button to start. You can use this feature and that one. If you enjoy it, please consider donating, also send me any bugs, ideas or any kind of feedback!"
+    "meta": {
+        "name": "Template",
+        "dir": "template",
+        "author": "Some Guy",
+        "url": "someguy.com"
+    },
+    "theme": {
+        "color": "green"
+    },
+    "changelog": {
+        "tab": "Changes",
+        "landing": "I've got some updates for you! Check it out...",
+        "versions": [{
+            "number": "1.0.0",
+            "changes": [
+                "Added something",
+                "And another thing",
+                "Yet more stuff"
+            ]
+        }, {
+            "beta": true,
+            "number": "1.0.2",
+            "changes": [
+                "Fixed bugs here and there",
+                "Added bugs there and here",
+                "New super cool broken thing"
+            ]
+        }]
+    },
+    "landing": {
+        "tab": "Hi there!",
+        "title": "Thanks for installing this product!",
+        "text": "Here are a few must-know things about Template! If you enjoy this app please consider donating, you can fork the project at <a href=\"github.com\">github.com/SomeGuy/Template.</a>",
+        "sections": [{
+            "text": "Look at this feature! It is awesome bro I'm telling you!!1one",
+            "image": "awesome.jpg"
+        }, {
+            "text": "This one is niiiiice, look at dat"
+        }]
+    }
 }
