@@ -11,12 +11,17 @@
 
 #main-paper>md-body>md-content {
     flex: 1;
-    overflow: auto;
     background-color: #fff;
 }
 
 #main-pager {
+	flex: 1;
     width: 100%;
+}
+
+#main-pager>md-page {
+	flex: 1;
+    overflow: auto;
 }
 
 .landing {
