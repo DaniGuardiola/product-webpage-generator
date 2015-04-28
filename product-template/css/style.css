@@ -17,6 +17,16 @@
     margin: 0;
 }
 
+.faq md-icon svg {
+  top: 4px;
+  left: 2px;
+}
+.faq md-icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
 #main-paper md-tabbar #selector {
     background-color: white;
 }

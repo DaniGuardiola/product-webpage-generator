@@ -125,7 +125,7 @@ function genLandingSections() {
         faq = document.createElement("div");
         faq.className = "faq";
 
-        for (i = data.faq.questions.length - 1; i >= 0; i--) {
+        for (var i = 0; i < data.faq.questions.length; i++) {
             qanda = data.faq.questions[i];
 
             p = document.createElement("p");
