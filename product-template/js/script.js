@@ -36,7 +36,7 @@ function init() {
 
     if (param("update") === "true") {
         landingTitle.textContent = "!%changelog.landing%!";
-        tabs[0].textContent = "!%changelog.landingTab%!";
+        tabs.children[0].textContent = "!%changelog.landingTab%!";
     }
 
     paperkit.init();
