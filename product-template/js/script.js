@@ -30,13 +30,13 @@ function init() {
         }
         if (p) {
             version.textContent = p.getAttribute("data-version");
-            p.setAttribute("md-color", "!%theme.color%!" + "-700");
+            p.setAttribute("md-color", data.theme.color + "-700");
         }
     }
 
     if (param("update") === "true") {
-        landingTitle.textContent = "!%changelog.landing%!";
-        tabs.children[0].textContent = "!%changelog.landingTab%!";
+        landingTitle.textContent = data.changelog.landing;
+        tabs.children[0].textContent = data.changelog.landing;
     }
 
     paperkit.init();
