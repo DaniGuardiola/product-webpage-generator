@@ -15,8 +15,10 @@
     },
     "changelog": {
         "tab": "Changes",
-        "landing": "I've got an update for you! Enjoy the %version%",
-        "landingTab": "Hi there!",
+        "landing": {
+            "title": "<md-icon style=\"display: inline-block; height: 34px; padding: 0; margin-left: -16px;\" md-fill=\"%theme.color%-700\" md-image=\"icon: done\"></md-icon>I've got an update for you! Enjoy <span style=\"  margin-bottom: 16px; display: inline-block;\" md-font-color=\"%theme.color%-900\">%version%</span>",
+            "tab": "Hi there!"
+        },
         "versions": [{
             "number": "1.0.0",
             "changes": [

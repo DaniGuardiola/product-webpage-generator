@@ -11,17 +11,31 @@
 
 #main-paper>md-body>md-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
 }
 
 #main-pager {
-	flex: 1;
+    flex: 1;
+    overflow-y: auto;
     width: 100%;
 }
 
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.hidden {
+    display: none;
+}
+
 #main-pager>md-page {
-	flex: 1;
-    overflow: auto;
+    position: relative;
 }
 
 .landing {
@@ -44,6 +58,10 @@
     padding: 0;
     height: 16px;
     width: 24px;
+}
+
+#main-paper md-tabbar.no-landing {
+	margin-left: -118.890625px;
 }
 
 #main-paper md-tabbar #selector {

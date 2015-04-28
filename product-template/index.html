@@ -39,9 +39,9 @@
                             <md-tab>%faq.tab%</md-tab>
                         </md-tabbar>
                         <md-space></md-space>
+                        <md-icon-button md-image="icon: google-plus" md-action="link-out: https://plus.google.com/share?url=http://%social.url%/"></md-icon-button>
                         <md-icon-button md-image="icon: twitter" md-action="link-out: https://twitter.com/intent/tweet?text=%social.twitter.msg%&via=%social.twitter.user%"></md-icon-button>
                         <md-icon-button md-image="icon: facebook" md-action="link-out: https://www.facebook.com/sharer/sharer.php?u=http://%social.url%/"></md-icon-button>
-                        <md-icon-button md-image="icon: google-plus" md-action="link-out: https://plus.google.com/share?url=http://%social.url%/"></md-icon-button>
                         <md-icon-button md-image="icon: github" md-action="link-out: http://%meta.repo%/"></md-icon-button>
                     </md-row>
                 </md-toolbar>
@@ -51,7 +51,8 @@
                             <span id="landing-title" md-typo="display-1">%landing.title%</span>
                             <br>
                             <br>
-                            <span md-typo="subhead">%landing.text%</span> %landing.html%
+                            <span id="landing-text" md-typo="subhead">%landing.text%</span>
+                            <div id="landing-html">%landing.html%</div>
                         </md-page>
                         <md-page>%changelog.html%</md-page>
                         <md-page>%faq.html%</md-page>

@@ -10,8 +10,13 @@ function init() {
 
     var hash = window.location.hash.split("?")[0];
     var tabs = document.querySelector("#main-paper md-tabbar");
+    var tab = tabs.children[0];
+    var tabCopy = tab.cloneNode();
+    tabCopy.classList.add("hidden");
     var p;
     var landingTitle = document.getElementById("landing-title");
+    var landingText = document.getElementById("landing-text");
+    var landingHTML = document.getElementById("landing-html");
     var version = document.getElementById("version");
     var changelog = document.querySelector("#main-paper .changelog");
 
@@ -35,16 +40,24 @@ function init() {
     }
 
     if (param("update") === "true") {
-        landingTitle.innerHTML = data.changelog.landing;
-        tabs.children[0].textContent = data.changelog.landingTab;
+        landingTitle.innerHTML = data.changelog.landing.title;
+        landingTitle.classList.add("center");
+        landingText.classList.add("hidden");
+        landingHTML.classList.add("hidden");
+
+        tabs.classList.add("no-landing");
     }
 
     paperkit.init();
 
-    if (hash === "#changelog") {
-        setTimeout(function() {
+    if (hash === "#changes") {
+        if (param("update")) {
+            setTimeout(function() {
+                tabs.children[1].click();
+            }, 2000);
+        } else {
             tabs.children[1].click();
-        }, 3000);
+        }
     }
 
 }
