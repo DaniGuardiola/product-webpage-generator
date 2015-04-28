@@ -37,7 +37,7 @@
     "landing": {
         "tab": "Welcome!",
         "title": "Thanks for installing this product!",
-        "text": "Here are a few must-know things about Template! If you enjoy this app please consider donating, you can fork the project at <a href=\"github.com\">github.com/SomeGuy/Template.</a>",
+        "text": "Here are a few must-know things about Template! If you enjoy this app please consider donating, you can fork the project at <a href=\"http://github.com/\">github.com/SomeGuy/Template.</a>",
         "sections": [{
             "text": "Look at this feature! It is awesome bro I'm telling you!!1one",
             "image": "awesome.jpg"
@@ -46,17 +46,29 @@
         }]
     },
     "social": {
-        "twitterMsg": "This is a template tweet! #Wohoo",
+        "twitter": {
+            "msg": "I'm using a template from the opensource app landing & changelog page generator (todo: github url and name)! #Wohoo",
+            "user": "DaniMGuardiola"
+        },
         "url": "some.website.com"
     },
     "faq": {
         "tab": "Help",
         "questions": [{
-            "question": "How do I do this?",
-            "answer": "You have to do that and then you'll be able to do this"
+            "question": "How do I collect an article?",
+            "answer": "Go to any article in the Wikipedia (or Wikiwand) website. You'll find a <md-icon md-image=\"icon: bookmark-outline\"></md-icon> button in the right bottom corner of the page, click it to collect it"
         }, {
-            "question": "What is the answer to life, the universe and everything?",
-            "answer": "42. Everybody knows that."
+            "question": "How can I save an article to read it offline?",
+            "answer": "Open the article from the extension and click on the <md-icon md-image=\"icon: pin\"></md-icon> button at the right side of the toolbar. Click again to remove."
+        }, {
+            "question": "What is the difference between collecting and saving an article?",
+            "answer": "A collected article is just a reference and does not have the content. When you save it offline, the content is stored on your computer to open it without internet connection.<br>An article can be offline and not collected, collected and not offline, or both things. You can see your offline articles on the \"Offline\" option in the menu."
+        }, {
+            "question": "How do I remove an article from a list?",
+            "answer": "In the article list, put the cursor over the article and click the <md-icon md-image=\"icon: bookmark-remove\"></md-icon> button."
+        }, {
+            "question": "How can I open an article in the web interface instead of the reader?",
+            "answer": "In the article list or in the reader, click the <md-icon md-image=\"icon: launch\"></md-icon> button."
         }]
     }
 }

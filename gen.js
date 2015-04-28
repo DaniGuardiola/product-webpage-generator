@@ -178,7 +178,10 @@ function genSpecial() {
     }
     special = {
         "social": {
-            "twitterMsg": encodeURIComponent(data.social.twitterMsg)
+            "twitter": {
+                "msg": encodeURIComponent(data.social.twitter.msg),
+                "user": data.social.twitter.user
+            }
         },
         "version": data.changelog.versions[data.changelog.versions.length - 1].number,
         "landing": {
@@ -197,8 +200,10 @@ function genSpecial() {
         "theme": data.theme,
         "meta": {
             "subject": encodeURIComponent(data.meta.title + " - Feedback")
-        }
+        },
+        "social": data.social
     };
+    special.javascript.social.twitter = special.social.twitter;
     genLandingSections();
 }
 

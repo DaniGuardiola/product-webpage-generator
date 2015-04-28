@@ -2,6 +2,19 @@
     min-height: 256px;
 }
 
+#main-paper>md-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-paper>md-body>md-content {
+    flex: 1;
+    overflow: auto;
+    background-color: #fff;
+}
+
 #main-pager {
     width: 100%;
 }
@@ -9,7 +22,6 @@
 .landing {
     height: 50px;
     width: 50px;
-    background-color: red;
 }
 
 .changelog p,
@@ -58,6 +70,12 @@
         max-height: 86%;
         overflow: auto;
         border-radius: 2px;
+    }
+}
+
+@media all and (min-width: 768px) and (min-height: 670px) {
+    #main-paper {
+        height: 384px;
     }
 }
 

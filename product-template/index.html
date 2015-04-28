@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>%meta.title%</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
-	<meta name="description" content="%meta.description%">
-
+    <meta name="description" content="%meta.description%">
     <link rel="stylesheet" href="bower_components/paperkit-min/paperkit.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -31,30 +30,34 @@
     <md-fab md-fill="white" md-color="red" md-shadow="shadow-1" md-image="icon: favorite" md-action="custom: donate"></md-fab>
     <md-content md-color="grey-200">
         <md-paper id="main-paper" md-shadow="shadow-1">
-            <md-toolbar md-color="%theme.color%-700">
-                <md-row md-type="mini">
-                    <md-tabbar md-pager="main-pager">
-                        <md-tab>%landing.tab%</md-tab>
-                        <md-tab>%changelog.tab%</md-tab>
-                        <md-tab>%faq.tab%</md-tab>
-                    </md-tabbar>
-                    <md-space></md-space>
-                    <md-icon-button md-image="icon: twitter" md-action="link-out: https://twitter.com/home?status=%social.twitterMsg%"></md-icon-button>
-                    <md-icon-button md-image="icon: facebook" md-action="link-out: https://www.facebook.com/sharer/sharer.php?u=http://%social.url%/"></md-icon-button>
-                    <md-icon-button md-image="icon: google-plus" md-action="link-out: https://plus.google.com/share?url=http://%social.url%/"></md-icon-button>
-                    <md-icon-button md-image="icon: github" md-action="link-out: http://%meta.repo%/"></md-icon-button>
-                </md-row>
-            </md-toolbar>
-            <md-pager id="main-pager">
-                <md-page md-padding>
-                    <span id="landing-title" md-typo="display-1">%landing.title%</span>
-                    <br>
-                    <br>
-                    <span md-typo="subhead">%landing.text%</span> %landing.html%
-                </md-page>
-                <md-page>%changelog.html%</md-page>
-                <md-page>%faq.html%</md-page>
-            </md-pager>
+            <md-body>
+                <md-toolbar md-color="%theme.color%-700">
+                    <md-row md-type="mini">
+                        <md-tabbar md-pager="main-pager">
+                            <md-tab>%landing.tab%</md-tab>
+                            <md-tab>%changelog.tab%</md-tab>
+                            <md-tab>%faq.tab%</md-tab>
+                        </md-tabbar>
+                        <md-space></md-space>
+                        <md-icon-button md-image="icon: twitter" md-action="link-out: https://twitter.com/intent/tweet?text=%social.twitter.msg%&via=%social.twitter.user%"></md-icon-button>
+                        <md-icon-button md-image="icon: facebook" md-action="link-out: https://www.facebook.com/sharer/sharer.php?u=http://%social.url%/"></md-icon-button>
+                        <md-icon-button md-image="icon: google-plus" md-action="link-out: https://plus.google.com/share?url=http://%social.url%/"></md-icon-button>
+                        <md-icon-button md-image="icon: github" md-action="link-out: http://%meta.repo%/"></md-icon-button>
+                    </md-row>
+                </md-toolbar>
+                <md-content>
+                    <md-pager id="main-pager">
+                        <md-page md-padding>
+                            <span id="landing-title" md-typo="display-1">%landing.title%</span>
+                            <br>
+                            <br>
+                            <span md-typo="subhead">%landing.text%</span> %landing.html%
+                        </md-page>
+                        <md-page>%changelog.html%</md-page>
+                        <md-page>%faq.html%</md-page>
+                    </md-pager>
+                </md-content>
+            </md-body>
         </md-paper>
     </md-content>
     <script src="bower_components/paperkit-min/paperkit.js"></script>
