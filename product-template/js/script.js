@@ -45,3 +45,8 @@ function init() {
     }
 
 }
+
+
+function donate(){
+	window.open("!%meta.donate%!");
+}
