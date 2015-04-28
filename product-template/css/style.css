@@ -55,9 +55,14 @@
     }
 }
 
+@media all and (min-width: 1200px) {
+    md-fab {
+        right: 11%;
+    }
+}
+
 @media all and (min-width: 1400px) {
     md-fab {
-        top: 164px;
         right: 20%;
     }
 }
