@@ -125,7 +125,7 @@ function genLandingSections() {
         faq = document.createElement("div");
         faq.className = "faq";
 
-        for (var i = 0; i < data.faq.questions.length; i++) {
+        for (i = 0; i < data.faq.questions.length; i++) {
             qanda = data.faq.questions[i];
 
             p = document.createElement("p");
@@ -177,9 +177,9 @@ function genSpecial() {
         return;
     }
     special = {
-    	"social": {
-    		"twitterMsg": encodeURIComponent(data.social.twitterMsg)
-    	},
+        "social": {
+            "twitterMsg": encodeURIComponent(data.social.twitterMsg)
+        },
         "version": data.changelog.versions[data.changelog.versions.length - 1].number,
         "landing": {
             "html": ""
@@ -196,7 +196,7 @@ function genSpecial() {
         "version": special.version,
         "theme": data.theme,
         "meta": {
-        	"subject": encodeURIComponent(data.meta.title+" - Feedback");
+            "subject": encodeURIComponent(data.meta.title + " - Feedback")
         }
     };
     genLandingSections();
