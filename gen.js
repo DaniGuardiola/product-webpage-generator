@@ -37,22 +37,19 @@ function generate(data) {
     fs.writeFileSync(product + "index.html", html);
 
     // Transform JavaScript
-    console.log(js + "");
     var js = fs.readFileSync(product + "js/script.js");
     js = (js + "").replace(replaceRegex, replacer)
         .replace(replaceRegex, replacer);
-    console.log(js + "");
 
     fs.writeFileSync(product + "js/script.js", js);
 
-    console.log("Just did " + product);
+    console.log("Generated " + product);
     // Call genSpecial again
     count = count + 1;
     genSpecial();
 }
 
 function genLandingSections() {
-    console.log("DOM " + data.meta.name);
     jsdom.env("", function(errors, window) {
         var jsdom = require("jsdom").jsdom;
 
@@ -132,7 +129,6 @@ function genLandingSections() {
         // Changelog export 
         special.changelog.html = wrap.innerHTML;
 
-        console.log("DOM END " + data.meta.name);
         generate(data);
     });
 }
@@ -143,8 +139,10 @@ function genSpecial() {
     } else {
         return;
     }
-    console.log("Special " + data.meta.name);
     special = {
+    	"social": {
+    		"twitterMsg": encodeURIComponent(data.social.twitterMsg)
+    	},
         "version": data.changelog.versions[data.changelog.versions.length - 1].number,
         "landing": {
             "html": ""
@@ -203,7 +201,6 @@ if (!fs.existsSync("backups/")) {
 
 for (var i = products.length - 1; i >= 0; i--) {
     if (!fs.statSync("data/" + products[i]).isDirectory()) {
-        console.log("Processing " + products[i]);
         datas.push(fs.readJSONSync("data/" + products[i]));
     }
 }
