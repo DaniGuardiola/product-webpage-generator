@@ -12,7 +12,7 @@
     },
     "changelog": {
         "tab": "Changes",
-        "landing": "I've got an update for you! Check this out",
+        "landing": "I've got an update for you! Enjoy the %version%",
         "landingTab": "Hi there!",
         "versions": [{
             "number": "1.0.0",

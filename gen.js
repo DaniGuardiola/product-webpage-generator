@@ -32,12 +32,14 @@ function generate(data) {
 
     // Transform HTML
     var html = fs.readFileSync(product + "index.html");
-    html = (html + "").replace(replaceRegex, replacer);
+    html = (html + "").replace(replaceRegex, replacer)
+        .replace(replaceRegex, replacer);
     fs.writeFileSync(product + "index.html", html);
 
     // Transform JavaScript
     var js = fs.readFileSync(product + "js/script.js");
-    js = (js + "").replace(replaceRegex, replacer);
+    js = (js + "").replace(replaceRegex, replacer)
+        .replace(replaceRegex, replacer);
 
     fs.writeFileSync(product + "js/script.js", js);
 
