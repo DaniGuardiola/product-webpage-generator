@@ -17,7 +17,7 @@
             <md-text>%meta.name% <span md-font-color="%theme.color%-900" id="version">%version%</span></md-text>
             <md-space></md-space>
             <md-text id="author" md-font-color="%theme.color%-100">by <a style="text-decoration: none; color: inherit;" href="http://%meta.url%/">%meta.author%</a></md-text>
-            <md-icon-button md-image="icon: mail" md-action="link-out: mailto:%meta.email%?subject=%data.meta.subject%"></md-icon-button>
+            <md-icon-button md-image="icon: mail" md-action="link-out: mailto:%meta.email%?%data.meta.email-param%"></md-icon-button>
         </md-row>
         <md-row md-type="standard">
             <md-icon></md-icon>

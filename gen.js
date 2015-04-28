@@ -173,6 +173,7 @@ function genLandingSections() {
 function genSpecial() {
     if (datas[count]) {
         data = datas[count];
+        data.emailparam = "?subject=%meta.subject%&body=%meta.content%";
     } else {
         return;
     }

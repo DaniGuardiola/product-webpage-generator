@@ -4,6 +4,8 @@
         "title": "%meta.name% - The #1 app for doing stuff",
         "description": "With %meta.name% you can do awesome stuff, like this thing or that other thing!",
         "email": "feedback@daniguardiola.me",
+        "subject": "%meta.name% - Feedback",
+        "content": "Hi! I have a problem / idea:",
         "dir": "template",
         "author": "Some Guy",
         "url": "someguy.com",
