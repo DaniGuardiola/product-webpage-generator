@@ -1,0 +1,29 @@
+{
+  "name": "paperkit-min",
+  "version": "0.1.0",
+  "main": [
+    "paperkit.css",
+    "paperkit.js"
+  ],
+  "ignore": [
+    "node_modules/",
+    "package.json",
+    "Gruntfile.js",
+    "bower.json",
+    ".bower.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "endpoint": "https://github.com/DaniGuardiola/paperkit-stable-min.git",
+  "homepage": "https://github.com/DaniGuardiola/paperkit-stable-min",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "2c47deb60afb1aa304ee65ad4d4e077db4260bd8"
+  },
+  "_source": "git://github.com/DaniGuardiola/paperkit-stable-min.git",
+  "_target": "~0.1.0",
+  "_originalSource": "paperkit-min",
+  "_direct": true
+}

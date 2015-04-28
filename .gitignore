@@ -1,5 +1,5 @@
 # Resources (run "npm install" and "bower install")
-bower_components/
+#bower_components/
 node_modules/
 
 # Generated (run "node gen.js")

@@ -1,0 +1,18 @@
+{
+  "name": "paperkit-min",
+  "version": "0.1.0",
+  "main": [
+    "paperkit.css",
+    "paperkit.js"
+  ],
+  "ignore": [
+    "node_modules/",
+    "package.json",
+    "Gruntfile.js",
+    "bower.json",
+    ".bower.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "endpoint": "https://github.com/DaniGuardiola/paperkit-stable-min.git"
+}
