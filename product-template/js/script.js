@@ -35,8 +35,8 @@ function init() {
     }
 
     if (param("update") === "true") {
-        landingTitle.textContent = data.changelog.landing;
-        tabs.children[0].textContent = data.changelog.landing;
+        landingTitle.innerHTML = data.changelog.landing;
+        tabs.children[0].textContent = data.changelog.landingTab;
     }
 
     paperkit.init();
