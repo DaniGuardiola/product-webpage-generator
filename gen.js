@@ -2,6 +2,8 @@
 var fs = require("fs-extra");
 var jsdom = require("jsdom");
 
+var datas = [];
+var count = 0;
 var data, special;
 var replaceRegex = /("!)?%([a-zA-Z\.]+)%(!")?/g;
 
@@ -13,7 +15,7 @@ function generate(data) {
     var backup = "backups/" + name + "/";
     var resources = "data/" + name + "/";
 
-    /* Backup */
+    // Backup
     if (fs.existsSync(product)) {
         if (fs.existsSync(backup)) {
             fs.removeSync(backup);
@@ -21,26 +23,32 @@ function generate(data) {
         fs.renameSync(product, backup);
     }
 
-    /* Copying */
+    // Copying
     fs.copySync(template, product);
     fs.copySync("bower_components", product + "bower_components");
     if (fs.existsSync(resources)) {
         fs.copySync(resources, product + "resources");
     }
 
-    /* Transform HTML */
+    // Transform HTML
     var html = fs.readFileSync(product + "index.html");
     html = (html + "").replace(replaceRegex, replacer);
     fs.writeFileSync(product + "index.html", html);
 
-    /* Transform JavaScript */
+    // Transform JavaScript
     var js = fs.readFileSync(product + "js/script.js");
     js = (js + "").replace(replaceRegex, replacer);
 
     fs.writeFileSync(product + "js/script.js", js);
+
+    console.log("Just did " + product);
+    // Call genSpecial again
+    count = count + 1;
+    genSpecial();
 }
 
 function genLandingSections() {
+    console.log("DOM " + data.meta.name);
     jsdom.env("", function(errors, window) {
         var jsdom = require("jsdom").jsdom;
 
@@ -120,11 +128,18 @@ function genLandingSections() {
         // Changelog export 
         special.changelog.html = wrap.innerHTML;
 
+        console.log("DOM END " + data.meta.name);
         generate(data);
     });
 }
 
-function genSpecial(data) {
+function genSpecial() {
+    if (datas[count]) {
+        data = datas[count];
+    } else {
+        return;
+    }
+    console.log("Special " + data.meta.name);
     special = {
         "version": data.changelog.versions[data.changelog.versions.length - 1].number,
         "landing": {
@@ -140,8 +155,6 @@ function genSpecial(data) {
         "version": special.version
     };
     genLandingSections();
-
-    return special;
 }
 
 function objString(obj, is, value) {
@@ -186,7 +199,8 @@ if (!fs.existsSync("backups/")) {
 
 for (var i = products.length - 1; i >= 0; i--) {
     if (!fs.statSync("data/" + products[i]).isDirectory()) {
-        data = fs.readJSONSync("data/" + products[i]);
-        special = genSpecial(data);
+        console.log("Processing " + products[i]);
+        datas.push(fs.readJSONSync("data/" + products[i]));
     }
 }
+genSpecial();
