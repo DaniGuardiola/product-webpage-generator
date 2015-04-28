@@ -37,9 +37,11 @@ function generate(data) {
     fs.writeFileSync(product + "index.html", html);
 
     // Transform JavaScript
+    console.log(js+"");
     var js = fs.readFileSync(product + "js/script.js");
     js = (js + "").replace(replaceRegex, replacer)
         .replace(replaceRegex, replacer);
+    console.log(js+"");        
 
     fs.writeFileSync(product + "js/script.js", js);
 
