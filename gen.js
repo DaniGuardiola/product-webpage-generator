@@ -194,7 +194,10 @@ function genSpecial() {
     special.javascript = {
         "changelog": data.changelog,
         "version": special.version,
-        "theme": data.theme
+        "theme": data.theme,
+        "meta": {
+        	"subject": encodeURIComponent(data.meta.title+" - Feedback");
+        }
     };
     genLandingSections();
 }
