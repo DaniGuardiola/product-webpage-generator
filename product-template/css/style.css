@@ -136,7 +136,7 @@ md-fab:hover:not(.donated)>.please-text {
 
 @media all and (min-width: 768px) and (min-height: 670px) {
     #main-paper {
-        height: 384px;
+        max-height: 384px;
     }
 }
 
