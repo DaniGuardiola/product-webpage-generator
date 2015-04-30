@@ -1,3 +1,13 @@
+/* Fixes */
+
+md-fab {
+    position: fixed !important;
+}
+
+md-icon-button {
+    border-radius: 50%;
+}
+
 #main-paper {
     min-height: 256px;
 }
@@ -20,6 +30,30 @@
     flex: 1;
     overflow-y: auto;
     width: 100%;
+}
+
+md-fab {
+    position: relative;
+}
+
+.donate-text,
+.please-text {
+    position: absolute;
+    z-index: 9999;
+    bottom: -100px;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%);
+}
+
+md-fab:hover:not(.donated)>.donate-text,
+md-fab>.please-text {
+    display: none;
+}
+
+md-fab:hover:not(.donated)>.please-text {
+    display: block;
 }
 
 .center {
@@ -48,6 +82,10 @@
     margin: 0;
 }
 
+.faq span {
+    white-space: normal;
+}
+
 .faq md-icon svg {
     top: -2px;
     left: 0;
@@ -61,7 +99,7 @@
 }
 
 #main-paper md-tabbar.no-landing {
-	margin-left: -118.890625px;
+    margin-left: -118.890625px;
 }
 
 #main-paper md-tabbar #selector {

@@ -13,7 +13,8 @@
     "tests"
   ],
   "dependencies": {
-    "paperkit-min": "~0.1.0"
+    "paperkit-min": "~0.1.0",
+    "waves": "~0.7.1"
   },
   "devDependencies": {
     "paperkit-min": "~0.1.0"
