@@ -30,7 +30,7 @@ function init() {
     var version = document.getElementById("version");
     var changelog = document.querySelector("#main-paper .changelog");
 
-    window.location.hash = "";
+    // window.location.hash = "";
 
     function param(query) {
         var url = window.location.href;
