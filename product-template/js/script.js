@@ -13,7 +13,7 @@ function addWaves() {
         Waves.attach(buttons[i], ".button" ["waves-circle"]);
     }
 
-    Waves.init();
+    //Waves.init();
 }
 
 function init() {
