@@ -53,7 +53,7 @@ function init() {
 
     if (param("update") === "true") {
         landingTitle.innerHTML = data.changelog.landing.title;
-        landingTitle.setAttribute("style", "margin: 0 0 0 16px; padding-right: 32px; width: 100%;");
+        landingTitle.setAttribute("style", "margin: 0 0 0 16px; padding-right: 32px; width: 100%; white-space: normal;");
         landingTitle.classList.add("center");
         landingText.classList.add("hidden");
         landingHTML.classList.add("hidden");
