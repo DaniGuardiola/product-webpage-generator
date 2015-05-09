@@ -107,7 +107,7 @@ function genLandingSections() {
                 text.appendChild(textP);
 
                 if (!section.image) {
-                    text.className = "text center";
+                    text.style.textAlign = "center";
                 }
 
                 if (!section.left || section.left && section.left !== "image") {
