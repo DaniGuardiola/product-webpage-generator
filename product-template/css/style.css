@@ -128,7 +128,7 @@ md-fab:hover:not(.donated)>.please-text {
         left: 50%;
         transform: translate(-50%);
         width: 700px;
-        max-height: 86%;
+        height: 384px;
         overflow: auto;
         border-radius: 2px;
     }
@@ -136,7 +136,7 @@ md-fab:hover:not(.donated)>.please-text {
 
 @media all and (min-width: 768px) and (min-height: 670px) {
     #main-paper {
-        max-height: 384px;
+        height: 384px;
     }
 }
 
