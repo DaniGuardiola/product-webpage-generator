@@ -106,13 +106,20 @@ function genLandingSections() {
 
                 text.appendChild(textP);
 
-                tile.appendChild(text);
+                if (!section.left || section.left && section.left !== "image") {
+                    tile.appendChild(text);
+                }
             }
 
             if (section.image) {
                 image = document.createElement("img");
                 image.src = "template/" + section.image;
                 tile.appendChild(image);
+
+                if (section.left && section.left === "image") {
+                    text.className = "text right";
+                    tile.appendChild(text);
+                }
             }
 
             landing.appendChild(tile);

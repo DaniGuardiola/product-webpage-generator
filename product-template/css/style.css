@@ -85,8 +85,13 @@ md-fab:hover:not(.donated)>.please-text {
 
 #landing-html>div>.text>span {
     position: absolute;
+    margin-right: 16px;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+#landing-html>div>.text.right>span {
+    text-align: right;
 }
 
 

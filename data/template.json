@@ -44,7 +44,8 @@
         "text": "Here are a few must-know things about Template! If you enjoy this app please consider donating, you can fork the project at <a href=\"http://github.com/\">github.com/SomeGuy/Template.</a>",
         "sections": [{
             "text": "Look at this feature! It is awesome bro I'm telling you!!1one",
-            "image": "donate.png"
+            "image": "donate.png",
+            "left": "image"
         }, {
             "text": "This one is niiiiice, look at dat"
         }]
