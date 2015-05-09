@@ -106,6 +106,10 @@ function genLandingSections() {
 
                 text.appendChild(textP);
 
+                if (!section.image) {
+                    textP.style.textAlign = "center";
+                }
+
                 if (!section.left || section.left && section.left !== "image") {
                     tile.appendChild(text);
                 }
