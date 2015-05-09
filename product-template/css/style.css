@@ -88,6 +88,8 @@ md-fab:hover:not(.donated)>.please-text {
     margin-right: 16px;
     top: 50%;
     transform: translate(0, -50%);
+    width: 100%;
+    padding-right: 16px;
 }
 
 #landing-html>div>.text.center>span {
