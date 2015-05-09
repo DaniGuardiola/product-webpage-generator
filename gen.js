@@ -113,7 +113,7 @@ function genLandingSections() {
 
             if (section.image) {
                 image = document.createElement("img");
-                image.src = "template/" + section.image;
+                image.src = "resources/" + section.image;
                 tile.appendChild(image);
 
                 if (section.left && section.left === "image") {
