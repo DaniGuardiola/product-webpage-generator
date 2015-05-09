@@ -95,7 +95,7 @@ md-fab:hover:not(.donated)>.please-text {
 }
 
 #landing-html>div>.text.right>span {
-    text-align: right;
+    text-align: end;
 }
 
 .changelog p,
