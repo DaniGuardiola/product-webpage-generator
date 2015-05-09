@@ -74,6 +74,7 @@ md-fab:hover:not(.donated)>.please-text {
 
 #landing-html>div {
   width: 100%;
+  min-height: 64px;
   display: flex;
 }
 
