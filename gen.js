@@ -106,12 +106,6 @@ function genLandingSections() {
 
                 text.appendChild(textP);
 
-                if (!section.image) {
-                    textP.style.textAlign = "center";
-                    textP.style.width = "100%";
-                    textP.style.paddingRight = "16px";
-                }
-
                 if (!section.left || section.left && section.left !== "image") {
                     tile.appendChild(text);
                 }
