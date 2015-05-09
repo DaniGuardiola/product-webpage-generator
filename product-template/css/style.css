@@ -72,10 +72,22 @@ md-fab:hover:not(.donated)>.please-text {
     position: relative;
 }
 
-.landing {
-    height: 50px;
-    width: 50px;
+#landing-html>div {
+  width: 100%;
+  display: flex;
 }
+
+#landing-html>div>.text {
+    position: relative;
+    flex: 1;
+}
+
+#landing-html>div>.text>span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 
 .changelog p,
 .faq p {

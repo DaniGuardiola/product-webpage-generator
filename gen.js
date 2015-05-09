@@ -66,7 +66,9 @@ function genLandingSections() {
         var landing;
         var section;
         var tile;
+        var stuff;
         var text;
+        var textP;
         var image;
 
         // Changelog vars
@@ -88,14 +90,32 @@ function genLandingSections() {
 
         for (i = 0; i < data.landing.sections.length; i++) {
             section = data.landing.sections[i];
-
-            if (section.text) {
-                text = document.createElement("span");
-            }
-
             tile = document.createElement("div");
 
-            text = "";
+            stuff = stuff === "-700" ? "" : "-700";
+
+            tile.setAttribute("md-color", data.theme.color + stuff);
+
+            if (section.text) {
+                text = document.createElement("div");
+                text.className = "text";
+                text.setAttribute("md-padding", "");
+
+                textP = document.createElement("span");
+                textP.textContent = section.text;
+
+                text.appendChild(textP);
+
+                tile.appendChild(text);
+            }
+
+            if (section.image) {
+                image = document.createElement("img");
+                image.src = "template/" + section.image;
+                tile.appendChild(image);
+            }
+
+            landing.appendChild(tile);
         }
 
         // Changelog generator
@@ -147,12 +167,11 @@ function genLandingSections() {
             faq.appendChild(p);
         }
 
-        // Landing HTML extraction
-        wrap = document.createElement("div");
-        wrap.appendChild(landing);
-
         // Landing export 
-        special.landing.html = wrap.innerHTML;
+        special.landing.html = landing.innerHTML;
+
+        // Creating wrapper element
+        wrap = document.createElement("div");
 
         // Changelog HTML extraction
         wrap.innerHTML = "";
