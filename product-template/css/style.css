@@ -32,6 +32,21 @@ md-icon-button {
     width: 100%;
 }
 
+#ads {
+    max-width: 100%;
+    position: fixed; 
+    width: 700px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+}
+
+.ad {
+    height: 72px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
 md-fab {
     position: relative;
 }
