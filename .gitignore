@@ -9,3 +9,6 @@ products/
 # Data
 data/*
 !data/template.json
+
+# Local
+*.sublime-project

@@ -12,8 +12,9 @@
         "repo": "github.com/SomeGuy/Template",
         "donate": "https://www.paypal.com/&cmd=_s-xclick&hosted_button_id=XEAXW6XQ6GNHE"
     },
-    "add": {
-        "meta": "<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\r\n<!-- TimeDoser -->\r\n<ins class=\"adsbygoogle\"\r\n     style=\"display:block\"\r\n     data-ad-client=\"ca-pub-2874296433028438\"\r\n     data-ad-slot=\"1463327900\"\r\n     data-ad-format=\"auto\"><\/ins>\r\n<script>\r\n(adsbygoogle = window.adsbygoogle || []).push({});\r\n<\/script>"
+    "ads": {
+        "first": "<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\r\n<!-- TimeDoser -->\r\n<ins class=\"adsbygoogle\"\r\n     style=\"display:block\"\r\n     data-ad-client=\"ca-pub-2874296433028438\"\r\n     data-ad-slot=\"1463327900\"\r\n     data-ad-format=\"auto\"><\/ins>\r\n<script>\r\n(adsbygoogle = window.adsbygoogle || []).push({});\r\n<\/script>",
+        "second": "<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\r\n<!-- TimeDoser -->\r\n<ins class=\"adsbygoogle\"\r\n     style=\"display:block\"\r\n     data-ad-client=\"ca-pub-2874296433028438\"\r\n     data-ad-slot=\"1463327900\"\r\n     data-ad-format=\"auto\"><\/ins>\r\n<script>\r\n(adsbygoogle = window.adsbygoogle || []).push({});\r\n<\/script>"
     },
     "theme": {
         "color": "indigo"
