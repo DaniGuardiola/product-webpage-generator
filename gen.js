@@ -102,7 +102,7 @@ function genLandingSections() {
                 text.setAttribute("md-padding", "");
 
                 textP = document.createElement("span");
-                textP.textContent = section.text;
+                textP.innerHTML = section.text;
 
                 text.appendChild(textP);
 
