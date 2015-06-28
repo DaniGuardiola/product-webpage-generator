@@ -1,5 +1,9 @@
 /* Fixes */
 
+md-content {
+    overflow: visible;
+}
+
 md-fab {
     position: fixed !important;
 }
@@ -34,17 +38,17 @@ md-icon-button {
 
 #ads {
     max-width: 100%;
-    position: fixed; 
-    width: 700px;
+    position: fixed;
+    width: 730px;
     left: 50%;
     bottom: 0;
     transform: translate(-50%);
 }
 
 .ad {
-    height: 72px;
+    height: 90px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 md-fab {
