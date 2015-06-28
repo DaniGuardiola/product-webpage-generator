@@ -1,4 +1,7 @@
 /* Fixes */
+#main-toolbar {
+    position: absolute;;
+}
 
 md-content {
     overflow: visible;
