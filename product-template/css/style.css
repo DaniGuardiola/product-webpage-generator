@@ -3,7 +3,8 @@
     position: absolute;;
 }
 
-md-content {
+#main-content {
+    margin-top: 64px;
     overflow: visible;
 }
 
