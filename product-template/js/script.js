@@ -79,7 +79,5 @@ function init() {
 function donate(fab) {
     fab.classList.add("donated");
     fab.querySelector("img").src = "template/thanks.png";
-    setTimeout(function() {
-        window.open("!%meta.donate%!");
-    }, 500);
+    window.open("!%meta.donate%!");
 }
